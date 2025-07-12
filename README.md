@@ -8,6 +8,10 @@ a few different packages are planned to be automated, like:
 - jellyseerr
 - streammystats / jellystats 
 - arr suite 
+  - sonarr 
+  - radarr
+  - prowlarr
+  - bazarr
 
 
 

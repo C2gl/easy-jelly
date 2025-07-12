@@ -1,0 +1,21 @@
+name: Create Proxmox LXC
+
+on:
+  workflow_dispatch:
+
+jobs:
+  create_lxc:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Install dependencies
+        run: sudo apt-get install -y jq
+
+      - name: Run LXC creation script
+        env:
+          PROXMOX_HOST: ${{ secrets.PROXMOX_HOST }}
+          USER: ${{ secrets.PROXMOX_USER }}
+          PASSWORD: ${{ secrets.PROXMOX_PASS }}
+        run: bash scripts/create_lxc.sh

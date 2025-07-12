@@ -1,9 +1,9 @@
 # easy-jelly
-easy automated jellyfin setup , planned to automatically download and interlink different jellyfin products (you should be able to decide what ones with a edditable variable command)
+Easy automated jellyfin setup , planned to automatically download and interlink different jellyfin products (you should be able to decide what ones with a edditable variable command).
 
-the idea is also to support different os's, but proxmox firts!
+The idea is also to support different os's, but proxmox firts!
 
-a few different packages are planned to be automated, like: 
+A few different packages are planned to be automated, like: 
 - jellyfin 
 - jellyseerr
 - streammystats / jellystats 
